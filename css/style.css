@@ -42,6 +42,18 @@ body {
   color: #fff;
   font-size: 45px;
   text-transform: uppercase;
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: all 0.5s ease-out;
+}
+.section .content h2.active {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.section .content p {
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
 }
 .page-menu {
   position: fixed;
@@ -66,4 +78,7 @@ body {
   padding: 7px 10px;
   font-size: 14px;
   font-family: "Calibri";
+}
+#fp-nav a span {
+  background: #fff !important;
 }
