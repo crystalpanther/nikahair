@@ -3,62 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <title>FullPage.js example</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.min.css">
+    <script src="https://use.fontawesome.com/948142a9de.js"></script>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-
-
     <div class="page-container">
-        <div class="section">
-            <div class="bg"><img src="img/p1.jpeg" alt=""></div>
-            <div class="content">
-                <h2>Some section title 1</h2>
-                <p data-move="3">Go to section 3</p>
+        <section class="section main">
+            <div class="bg">
+                <img src="./img/s1.jpg" alt=""/>
             </div>
-        </div>
-        <div class="section">
-            <div class="bg"><img src="img/p2.jpg" alt=""></div>
             <div class="content">
-                <h2>Some section title 2</h2>
+                <h2>nika hairdresser</h2>
+                <!-- <h2>welcome</h2> -->
+                <p data-move="3">welcome</p>
             </div>
-        </div>
-        <div class="section">
-            <div class="bg"><img src="img/p3.jpg" alt=""></div>
-            <div class="content">
-                <h2>Some section title 3</h2>
+        </section>
+        <section class="section works">
+            <div class="bg-works"></div>
+        </section>
+        <section class="section contact">
+            <div class="bg">
+                <img src="./img/s2.jpg" alt=""/>
             </div>
-        </div>
-        <div class="section">
-            <div class="bg"><img src="img/p4.jpeg" alt=""></div>
-            <div class="content">
-                <h2>Some section title 4</h2>
-            </div>
-        </div>
-        <div class="section">
-            <div class="bg"><img src="img/p4.jpeg" alt=""></div>
-            <div class="content">
-                <h2>Some section title 5</h2>
-            </div>
-        </div>
+        </section>
     </div>
     <div class="page-menu">
         <nav>
             <ul>
-                <li><a href="#s1">Section 1</a></li>
-                <li><a href="#s2">Section 2</a></li>
-                <li><a href="#s3">Section 3</a></li>
-                <li><a href="#s4">Section 4</a></li>
-                <li><a href="#s5">Section 5</a></li>
+                <li><a href="#s1">home</a></li>
+                <li><a href="#s2">works</a></li>
+                <li><a href="#s3" id="contact">contact me</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="mobile-topbar">
+        <span class="fa fa-bars" aria-hidden="true"></span>
+    </div>
+    <div class="mobile-page-menu">
+        <nav>
+            <ul>
+                <li><span class="fa fa-times" aria-hidden="true"></span></li>
+                <li class="mobile-menu"><a href="#s1">home</a></li>
+                <li class="mobile-menu"><a href="#s2">works</a></li>
+                <li class="mobile-menu"><a href="#s3">contact me</a></li>
             </ul>
         </nav>
     </div>
 
-
-<script src="js/jquery-2.2.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/vendors/scrolloverflow.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/vendors/jquery.easings.min.js"></script>
-<script src="js/main.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/vendors/scrolloverflow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/vendors/jquery.easings.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
